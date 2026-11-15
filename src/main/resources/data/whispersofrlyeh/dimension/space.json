@@ -1,0 +1,13 @@
+{
+  "type": "whispersofrlyeh:space",
+  "generator": {
+    "type": "whispersofrlyeh:space",
+    "settings": {
+      "biome": "whispersofrlyeh:space",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

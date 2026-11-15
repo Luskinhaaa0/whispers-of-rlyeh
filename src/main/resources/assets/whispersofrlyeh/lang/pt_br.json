@@ -34,5 +34,11 @@
   "message.whispersofrlyeh.whisper.7": "Eles vêm do mar. Sempre vieram.",
   "entity.whispersofrlyeh.shoggoth": "Shoggoth",
   "item.whispersofrlyeh.shoggoth_spawn_egg": "Ovo Gerador de Shoggoth",
-  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!"
+  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!",
+  "block.whispersofrlyeh.moon_rock": "Rocha Lunar",
+  "message.whispersofrlyeh.enter_space": "Você deixou a atmosfera. O vazio observa.",
+  "message.whispersofrlyeh.return_earth": "Reentrando na atmosfera...",
+  "message.whispersofrlyeh.sun_heat": "O calor do Sol queima sua pele!",
+  "commands.whispersofrlyeh.speed.set": "Velocidade definida: %s",
+  "commands.whispersofrlyeh.speed.get": "Sua velocidade: %s"
 }

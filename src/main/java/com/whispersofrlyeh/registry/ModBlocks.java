@@ -30,5 +30,13 @@ public final class ModBlocks {
                     .lightLevel(state -> 3)
                     .sound(SoundType.STONE)));
 
+    /** Rocha Lunar: superfície da Lua. */
+    public static final DeferredBlock<Block> MOON_ROCK = BLOCKS.register("moon_rock",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.TUFF)));
+
     private ModBlocks() {}
 }

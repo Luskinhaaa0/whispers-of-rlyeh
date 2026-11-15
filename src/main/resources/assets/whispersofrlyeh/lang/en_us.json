@@ -34,5 +34,11 @@
   "message.whispersofrlyeh.whisper.7": "They come from the sea. They always have.",
   "entity.whispersofrlyeh.shoggoth": "Shoggoth",
   "item.whispersofrlyeh.shoggoth_spawn_egg": "Shoggoth Spawn Egg",
-  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!"
+  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!",
+  "block.whispersofrlyeh.moon_rock": "Moon Rock",
+  "message.whispersofrlyeh.enter_space": "You have left the atmosphere. The void is watching.",
+  "message.whispersofrlyeh.return_earth": "Re-entering the atmosphere...",
+  "message.whispersofrlyeh.sun_heat": "The Sun's heat scorches your skin!",
+  "commands.whispersofrlyeh.speed.set": "Speed set: %s",
+  "commands.whispersofrlyeh.speed.get": "Your speed: %s"
 }

@@ -2,8 +2,10 @@ package com.whispersofrlyeh.sanity;
 
 import com.whispersofrlyeh.WhispersOfRlyeh;
 import com.whispersofrlyeh.command.SanityCommand;
+import com.whispersofrlyeh.command.SpeedCommand;
 import com.whispersofrlyeh.entity.DeepOne;
 import com.whispersofrlyeh.entity.Shoggoth;
+import com.whispersofrlyeh.registry.ModDimensions;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -33,7 +35,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
  *   Estar no End: -2       |  Submerso abaixo de Y 30: -2
  *   3+ monstros perto: -2  |  Ver um Deep One: -3
  *   Ídolo a até 6 blocos: -2 | Tempestade a céu aberto: -1
- *   Ver um Shoggoth: -5
+ *   Ver um Shoggoth: -5     | Estar no Espaço: -2
  *   Elder Sign no inventário: perdas pela metade
  *
  * RECUPERAÇÃO (mais lenta, a cada 6 segundos):
@@ -77,6 +79,7 @@ public final class SanityEvents {
         if (light <= 3) drain += 3;
         else if (light <= 7) drain += 1;
         if (level.dimension() == Level.END) drain += 2;
+        if (ModDimensions.isSpace(level)) drain += 2; // o vazio cósmico
         if (player.isUnderWater() && pos.getY() < 30) drain += 2;
         if (level.getEntitiesOfClass(Monster.class, player.getBoundingBox().inflate(10)).size() >= 3) drain += 2;
         if (seesDeepOne(player)) drain += 3;
@@ -209,6 +212,7 @@ public final class SanityEvents {
     @SubscribeEvent
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         SanityCommand.register(event.getDispatcher());
+        SpeedCommand.register(event.getDispatcher());
     }
 
     private SanityEvents() {}

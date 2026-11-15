@@ -29,6 +29,9 @@ public final class ModItems {
     public static final DeferredItem<BlockItem> CTHULHU_IDOL =
             ITEMS.registerSimpleBlockItem("cthulhu_idol", ModBlocks.CTHULHU_IDOL);
 
+    public static final DeferredItem<BlockItem> MOON_ROCK =
+            ITEMS.registerSimpleBlockItem("moon_rock", ModBlocks.MOON_ROCK);
+
     public static final DeferredItem<DeferredSpawnEggItem> DEEP_ONE_SPAWN_EGG = ITEMS.register("deep_one_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.DEEP_ONE, 0x1F3D2B, 0x7FC79A, new Item.Properties()));
 

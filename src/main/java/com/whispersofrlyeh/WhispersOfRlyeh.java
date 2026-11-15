@@ -5,6 +5,7 @@ import com.whispersofrlyeh.network.ModNetworking;
 import com.whispersofrlyeh.registry.ModAttachments;
 import com.whispersofrlyeh.registry.ModBlocks;
 import com.whispersofrlyeh.registry.ModCreativeTabs;
+import com.whispersofrlyeh.registry.ModDimensions;
 import com.whispersofrlyeh.registry.ModEntities;
 import com.whispersofrlyeh.registry.ModFeatures;
 import com.whispersofrlyeh.registry.ModItems;
@@ -27,6 +28,7 @@ public class WhispersOfRlyeh {
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
         ModFeatures.FEATURES.register(modEventBus);
+        ModDimensions.CHUNK_GENERATORS.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
         ModAttachments.ATTACHMENT_TYPES.register(modEventBus);
 
