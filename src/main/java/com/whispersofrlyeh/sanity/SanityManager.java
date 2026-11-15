@@ -2,6 +2,8 @@ package com.whispersofrlyeh.sanity;
 
 import com.whispersofrlyeh.network.SanitySyncPayload;
 import com.whispersofrlyeh.registry.ModAttachments;
+import com.whispersofrlyeh.registry.ModBlocks;
+import net.minecraft.core.BlockPos;
 import com.whispersofrlyeh.registry.ModItems;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
@@ -42,6 +44,17 @@ public final class SanityManager {
         Inventory inv = player.getInventory();
         for (int i = 0; i < inv.getContainerSize(); i++) {
             if (inv.getItem(i).is(ModItems.ELDER_SIGN.get())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /** Existe um Ídolo de Cthulhu num raio horizontal (e até 3 blocos para cima/baixo)? */
+    public static boolean isNearIdol(Player player, int radius) {
+        BlockPos center = player.blockPosition();
+        for (BlockPos pos : BlockPos.betweenClosed(center.offset(-radius, -3, -radius), center.offset(radius, 3, radius))) {
+            if (player.level().getBlockState(pos).is(ModBlocks.CTHULHU_IDOL.get())) {
                 return true;
             }
         }

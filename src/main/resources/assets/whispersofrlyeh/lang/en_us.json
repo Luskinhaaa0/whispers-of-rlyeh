@@ -1,22 +1,17 @@
 {
   "itemGroup.whispersofrlyeh": "Whispers of R'lyeh",
-
   "item.whispersofrlyeh.necronomicon": "Necronomicon",
   "item.whispersofrlyeh.necronomicon.tooltip": "That is not dead which can eternal lie...",
   "item.whispersofrlyeh.necronomicon.tooltip.cost": "Reading costs %s sanity",
-
   "item.whispersofrlyeh.elder_sign": "Elder Sign",
   "item.whispersofrlyeh.elder_sign.tooltip": "While carried, it shields your mind from what lurks.",
   "item.whispersofrlyeh.elder_sign.tooltip.use": "Right-click: repel nearby monsters",
-
   "message.whispersofrlyeh.necronomicon.spell.0": "Your eyes pierce the veil...",
   "message.whispersofrlyeh.necronomicon.spell.1": "The strength of the Old Ones flows through you.",
   "message.whispersofrlyeh.necronomicon.spell.2": "Dagon blesses your lungs.",
   "message.whispersofrlyeh.necronomicon.spell.3": "Forbidden knowledge floods your mind.",
   "message.whispersofrlyeh.necronomicon.backlash": "The pages whisper back. Your mind bleeds.",
-
   "message.whispersofrlyeh.elder_sign.repel": "The Elder Sign blazes with ancient light!",
-
   "message.whispersofrlyeh.whisper.0": "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn...",
   "message.whispersofrlyeh.whisper.1": "Something is crawling behind you.",
   "message.whispersofrlyeh.whisper.2": "The walls are breathing.",
@@ -24,7 +19,17 @@
   "message.whispersofrlyeh.whisper.4": "Iä! Iä! Cthulhu fhtagn!",
   "message.whispersofrlyeh.whisper.5": "Do not look at the water.",
   "message.whispersofrlyeh.madness": "Madness consumes you...",
-
   "commands.whispersofrlyeh.sanity.get": "Sanity: %s/100",
-  "commands.whispersofrlyeh.sanity.set": "Sanity set to %s"
+  "commands.whispersofrlyeh.sanity.set": "Sanity set to %s",
+  "item.whispersofrlyeh.calming_tea": "Calming Tea",
+  "item.whispersofrlyeh.calming_tea.tooltip": "Restores %s sanity",
+  "block.whispersofrlyeh.cyclopean_stone": "Cyclopean Stone",
+  "block.whispersofrlyeh.cthulhu_idol": "Idol of Cthulhu",
+  "entity.whispersofrlyeh.deep_one": "Deep One",
+  "item.whispersofrlyeh.deep_one_spawn_egg": "Deep One Spawn Egg",
+  "message.whispersofrlyeh.calming_tea": "The tea warms your mind. The whispers recede.",
+  "message.whispersofrlyeh.read_book": "An ordinary read calms the mind.",
+  "message.whispersofrlyeh.idol_dream": "You dreamed of a city of impossible angles... and woke knowing things you should not.",
+  "message.whispersofrlyeh.whisper.6": "Someone is standing right over there.",
+  "message.whispersofrlyeh.whisper.7": "They come from the sea. They always have."
 }

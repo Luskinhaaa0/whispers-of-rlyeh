@@ -3,7 +3,10 @@ package com.whispersofrlyeh;
 import com.mojang.logging.LogUtils;
 import com.whispersofrlyeh.network.ModNetworking;
 import com.whispersofrlyeh.registry.ModAttachments;
+import com.whispersofrlyeh.registry.ModBlocks;
 import com.whispersofrlyeh.registry.ModCreativeTabs;
+import com.whispersofrlyeh.registry.ModEntities;
+import com.whispersofrlyeh.registry.ModFeatures;
 import com.whispersofrlyeh.registry.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -20,8 +23,10 @@ public class WhispersOfRlyeh {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public WhispersOfRlyeh(IEventBus modEventBus, ModContainer modContainer) {
-        // Registra itens, aba criativa e os dados extras do jogador (sanidade)
+        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
+        ModFeatures.FEATURES.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
         ModAttachments.ATTACHMENT_TYPES.register(modEventBus);
 

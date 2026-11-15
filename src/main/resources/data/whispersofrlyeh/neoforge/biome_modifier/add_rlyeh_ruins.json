@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_deep_ocean",
+  "features": "whispersofrlyeh:rlyeh_ruin",
+  "step": "surface_structures"
+}
