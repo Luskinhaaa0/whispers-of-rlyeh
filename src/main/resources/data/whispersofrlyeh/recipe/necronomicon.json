@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "minecraft:ink_sac" },
+    { "item": "minecraft:rotten_flesh" },
+    { "item": "minecraft:spider_eye" }
+  ],
+  "result": { "id": "whispersofrlyeh:necronomicon", "count": 1 }
+}
