@@ -110,12 +110,6 @@ public class DeepOne extends Drowned implements GeoEntity {
         return false;
     }
 
-    /** Respira debaixo d'água (é um ser do mar, afinal). */
-    @Override
-    public boolean canBreatheUnderwater() {
-        return true;
-    }
-
     /** Não queima no sol como zumbis. */
     @Override
     protected boolean isSunSensitive() {

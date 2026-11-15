@@ -220,11 +220,6 @@ public class Shoggoth extends Monster implements GeoEntity {
     }
 
     @Override
-    public boolean canBreatheUnderwater() {
-        return true;
-    }
-
-    @Override
     public boolean startRiding(Entity vehicle, boolean force) {
         return false;
     }
