@@ -32,5 +32,8 @@ public final class ModItems {
     public static final DeferredItem<DeferredSpawnEggItem> DEEP_ONE_SPAWN_EGG = ITEMS.register("deep_one_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.DEEP_ONE, 0x1F3D2B, 0x7FC79A, new Item.Properties()));
 
+    public static final DeferredItem<DeferredSpawnEggItem> SHOGGOTH_SPAWN_EGG = ITEMS.register("shoggoth_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.SHOGGOTH, 0x0B0F0C, 0xC8FF5A, new Item.Properties()));
+
     private ModItems() {}
 }

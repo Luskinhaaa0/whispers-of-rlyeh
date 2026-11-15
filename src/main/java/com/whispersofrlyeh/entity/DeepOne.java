@@ -46,7 +46,7 @@ public class DeepOne extends Drowned implements GeoEntity {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Zombie.createAttributes()
-                .add(Attributes.MAX_HEALTH, 30.0)
+                .add(Attributes.MAX_HEALTH, 50.0) // metade de um Golem de Ferro
                 .add(Attributes.ATTACK_DAMAGE, 5.0)
                 .add(Attributes.ARMOR, 4.0)
                 .add(Attributes.FOLLOW_RANGE, 40.0);
@@ -101,6 +101,24 @@ public class DeepOne extends Drowned implements GeoEntity {
     /** Não pegam itens do chão (o modelo 3D não mostra itens nas mãos). */
     @Override
     public boolean canPickUpLoot() {
+        return false;
+    }
+
+    /** Não monta em nada (nada de Deep One jóquei de galinha). */
+    @Override
+    public boolean startRiding(Entity vehicle, boolean force) {
+        return false;
+    }
+
+    /** Respira debaixo d'água (é um ser do mar, afinal). */
+    @Override
+    public boolean canBreatheUnderwater() {
+        return true;
+    }
+
+    /** Não queima no sol como zumbis. */
+    @Override
+    protected boolean isSunSensitive() {
         return false;
     }
 

@@ -2,6 +2,7 @@ package com.whispersofrlyeh.registry;
 
 import com.whispersofrlyeh.WhispersOfRlyeh;
 import com.whispersofrlyeh.entity.DeepOne;
+import com.whispersofrlyeh.entity.Shoggoth;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -18,6 +19,13 @@ public final class ModEntities {
                     .eyeHeight(1.74f)
                     .clientTrackingRange(8)
                     .build("deep_one"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<Shoggoth>> SHOGGOTH = ENTITY_TYPES.register("shoggoth",
+            () -> EntityType.Builder.of(Shoggoth::new, MobCategory.MONSTER)
+                    .sized(2.6f, 2.4f)
+                    .eyeHeight(1.8f)
+                    .clientTrackingRange(10)
+                    .build("shoggoth"));
 
     private ModEntities() {}
 }

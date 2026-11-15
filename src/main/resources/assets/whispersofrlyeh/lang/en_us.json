@@ -31,5 +31,8 @@
   "message.whispersofrlyeh.read_book": "An ordinary read calms the mind.",
   "message.whispersofrlyeh.idol_dream": "You dreamed of a city of impossible angles... and woke knowing things you should not.",
   "message.whispersofrlyeh.whisper.6": "Someone is standing right over there.",
-  "message.whispersofrlyeh.whisper.7": "They come from the sea. They always have."
+  "message.whispersofrlyeh.whisper.7": "They come from the sea. They always have.",
+  "entity.whispersofrlyeh.shoggoth": "Shoggoth",
+  "item.whispersofrlyeh.shoggoth_spawn_egg": "Shoggoth Spawn Egg",
+  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!"
 }

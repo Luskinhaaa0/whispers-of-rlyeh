@@ -22,6 +22,7 @@ public final class ClientSetup {
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.DEEP_ONE.get(), DeepOneRenderer::new);
+        event.registerEntityRenderer(ModEntities.SHOGGOTH.get(), ShoggothRenderer::new);
     }
 
     private ClientSetup() {}

@@ -25,7 +25,7 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 
 /**
  * Alucinações que só o próprio jogador vê (nada disso existe no servidor):
- *  - Uma figura parada ao longe, atrás de você, encarando. Some quando você se
+ *  - Uma figura (Deep One, Enderman ou Shoggoth) parada ao longe, atrás de você, encarando. Some quando você se
  *    aproxima, quando olha fixo para ela, ou depois de alguns segundos.
  *  - Dor fantasma: a tela treme e você ouve o som de dano, sem perder vida.
  */
@@ -93,7 +93,10 @@ public final class Hallucinations {
         }
         if (ground == null) return;
 
-        EntityType<?> type = random.nextInt(3) == 0 ? EntityType.ENDERMAN : ModEntities.DEEP_ONE.get();
+        int pick = random.nextInt(5);
+        EntityType<?> type = pick == 0 ? EntityType.ENDERMAN
+                : pick == 1 ? ModEntities.SHOGGOTH.get()
+                : ModEntities.DEEP_ONE.get();
         Entity entity = type.create(level);
         if (entity == null) return;
 

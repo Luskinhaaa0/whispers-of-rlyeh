@@ -31,5 +31,8 @@
   "message.whispersofrlyeh.read_book": "Uma leitura comum acalma a mente.",
   "message.whispersofrlyeh.idol_dream": "Você sonhou com uma cidade de ângulos impossíveis... e acordou sabendo coisas que não deveria.",
   "message.whispersofrlyeh.whisper.6": "Tem alguém parado logo ali.",
-  "message.whispersofrlyeh.whisper.7": "Eles vêm do mar. Sempre vieram."
+  "message.whispersofrlyeh.whisper.7": "Eles vêm do mar. Sempre vieram.",
+  "entity.whispersofrlyeh.shoggoth": "Shoggoth",
+  "item.whispersofrlyeh.shoggoth_spawn_egg": "Ovo Gerador de Shoggoth",
+  "message.whispersofrlyeh.tekeli_li": "Tekeli-li! Tekeli-li!"
 }

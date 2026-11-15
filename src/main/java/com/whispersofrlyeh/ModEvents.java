@@ -1,6 +1,7 @@
 package com.whispersofrlyeh;
 
 import com.whispersofrlyeh.entity.DeepOne;
+import com.whispersofrlyeh.entity.Shoggoth;
 import com.whispersofrlyeh.registry.ModEntities;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -16,6 +17,7 @@ public final class ModEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.DEEP_ONE.get(), DeepOne.createAttributes().build());
+        event.put(ModEntities.SHOGGOTH.get(), Shoggoth.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -24,6 +26,12 @@ public final class ModEvents {
                 SpawnPlacementTypes.IN_WATER,
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 DeepOne::checkSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.REPLACE);
+
+        event.register(ModEntities.SHOGGOTH.get(),
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Shoggoth::checkSpawnRules,
                 RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 

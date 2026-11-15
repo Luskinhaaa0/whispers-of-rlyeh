@@ -23,6 +23,7 @@ public final class ModCreativeTabs {
                         output.accept(ModItems.CTHULHU_IDOL.get());
                         output.accept(ModItems.CYCLOPEAN_STONE.get());
                         output.accept(ModItems.DEEP_ONE_SPAWN_EGG.get());
+                        output.accept(ModItems.SHOGGOTH_SPAWN_EGG.get());
                     })
                     .build());
 
