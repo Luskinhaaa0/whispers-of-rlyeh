@@ -1,0 +1,34 @@
+{
+  "textures": { "all": "whispersofrlyeh:block/cthulhu_idol", "particle": "whispersofrlyeh:block/cthulhu_idol" },
+  "elements": [
+    { "name": "base",  "from": [3, 0, 3],  "to": [13, 2, 13],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "up": {"texture": "#all"}, "down": {"texture": "#all", "cullface": "down"} } },
+    { "name": "body",  "from": [5, 2, 5],  "to": [11, 8, 11],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "up": {"texture": "#all"} } },
+    { "name": "head",  "from": [4, 8, 4],  "to": [12, 14, 12],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "up": {"texture": "#all"}, "down": {"texture": "#all"} } },
+    { "name": "tentacle_l", "from": [5, 5, 3], "to": [6, 9, 4],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "down": {"texture": "#all"} } },
+    { "name": "tentacle_ml", "from": [7, 4, 3], "to": [8, 9, 4],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "down": {"texture": "#all"} } },
+    { "name": "tentacle_mr", "from": [8, 3, 3], "to": [9, 9, 4],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "down": {"texture": "#all"} } },
+    { "name": "tentacle_r", "from": [10, 5, 3], "to": [11, 9, 4],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "down": {"texture": "#all"} } },
+    { "name": "wing_l", "from": [2, 6, 10], "to": [5, 14, 11],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "up": {"texture": "#all"} } },
+    { "name": "wing_r", "from": [11, 6, 10], "to": [14, 14, 11],
+      "faces": { "north": {"texture": "#all"}, "south": {"texture": "#all"}, "east": {"texture": "#all"}, "west": {"texture": "#all"}, "up": {"texture": "#all"} } },
+    { "name": "eye_l", "from": [5, 11, 3.9], "to": [7, 12, 4],
+      "faces": { "north": {"uv": [0, 0, 2, 1], "texture": "#all"} } },
+    { "name": "eye_r", "from": [9, 11, 3.9], "to": [11, 12, 4],
+      "faces": { "north": {"uv": [0, 0, 2, 1], "texture": "#all"} } }
+  ],
+  "display": {
+    "gui": { "rotation": [30, 225, 0], "scale": [0.8, 0.8, 0.8] },
+    "ground": { "translation": [0, 3, 0], "scale": [0.5, 0.5, 0.5] },
+    "fixed": { "rotation": [0, 180, 0], "scale": [0.8, 0.8, 0.8] },
+    "thirdperson_righthand": { "rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.5, 0.5, 0.5] },
+    "firstperson_righthand": { "rotation": [0, 45, 0], "scale": [0.5, 0.5, 0.5] }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:is_ocean",
+  "spawners": { "type": "whispersofrlyeh:deep_one", "weight": 8, "minCount": 1, "maxCount": 3 }
+}
