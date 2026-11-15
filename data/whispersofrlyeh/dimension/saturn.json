@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:gas_saturn",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "saturn",
+    "settings": {
+      "biome": "whispersofrlyeh:saturn",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

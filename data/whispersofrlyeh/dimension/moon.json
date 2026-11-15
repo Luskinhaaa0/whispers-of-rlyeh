@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:moon",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "moon",
+    "settings": {
+      "biome": "whispersofrlyeh:moon",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

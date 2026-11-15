@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:rocky",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "venus",
+    "settings": {
+      "biome": "whispersofrlyeh:venus",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

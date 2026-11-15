@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:rocky",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "mars",
+    "settings": {
+      "biome": "whispersofrlyeh:mars",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:mercury",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "mercury",
+    "settings": {
+      "biome": "whispersofrlyeh:mercury",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

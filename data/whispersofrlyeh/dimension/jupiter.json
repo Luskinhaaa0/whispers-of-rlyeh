@@ -1,0 +1,14 @@
+{
+  "type": "whispersofrlyeh:gas",
+  "generator": {
+    "type": "whispersofrlyeh:planet",
+    "planet": "jupiter",
+    "settings": {
+      "biome": "whispersofrlyeh:jupiter",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}
