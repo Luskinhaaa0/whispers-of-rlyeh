@@ -2,26 +2,21 @@ package com.whispersofrlyeh.client;
 
 import com.whispersofrlyeh.WhispersOfRlyeh;
 import com.whispersofrlyeh.entity.DeepOne;
-import net.minecraft.client.model.DrownedModel;
-import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.renderer.entity.AbstractZombieRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.monster.Zombie;
+import software.bernie.geckolib.model.DefaultedEntityGeoModel;
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
-/** Usa o modelo do Afogado com a textura escamosa do Deep One. */
-public class DeepOneRenderer extends AbstractZombieRenderer<DeepOne, DrownedModel<DeepOne>> {
-    private static final ResourceLocation TEXTURE = WhispersOfRlyeh.id("textures/entity/deep_one.png");
+/**
+ * Renderiza o Deep One com o modelo 3D do GeckoLib. Os arquivos ficam em:
+ *   assets/whispersofrlyeh/geo/entity/deep_one.geo.json            (modelo, abre no Blockbench)
+ *   assets/whispersofrlyeh/animations/entity/deep_one.animation.json (animações)
+ *   assets/whispersofrlyeh/textures/entity/deep_one.png              (textura)
+ * O "true" faz a cabeça (osso "head") seguir o olhar da criatura.
+ */
+public class DeepOneRenderer extends GeoEntityRenderer<DeepOne> {
 
     public DeepOneRenderer(EntityRendererProvider.Context context) {
-        super(context,
-                new DrownedModel<>(context.bakeLayer(ModelLayers.DROWNED)),
-                new DrownedModel<>(context.bakeLayer(ModelLayers.DROWNED_INNER_ARMOR)),
-                new DrownedModel<>(context.bakeLayer(ModelLayers.DROWNED_OUTER_ARMOR)));
-    }
-
-    @Override
-    public ResourceLocation getTextureLocation(Zombie entity) {
-        return TEXTURE;
+        super(context, new DefaultedEntityGeoModel<>(WhispersOfRlyeh.id("deep_one"), true));
+        this.shadowRadius = 0.5f;
     }
 }
