@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "whispersofrlyeh:block/cthulhu_idol" },
+    "facing=east":  { "model": "whispersofrlyeh:block/cthulhu_idol", "y": 90 },
+    "facing=south": { "model": "whispersofrlyeh:block/cthulhu_idol", "y": 180 },
+    "facing=west":  { "model": "whispersofrlyeh:block/cthulhu_idol", "y": 270 }
+  }
+}
